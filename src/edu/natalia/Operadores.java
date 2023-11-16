@@ -2,17 +2,22 @@ package edu.natalia;
 
 public class Operadores {
     public static void main(String[] args){
-        int numero = 5;
-        boolean variavel = true;
+       // classe Operadores.java
+    int a, b;
 
-        //x repeticao
-        numero++;
+    a = 5;
+    b = 6;
 
-        System.out.println(numero);
-        System.out.println(!variavel);
+    /* EXEMPLO DE CONDICIONAL UTILIZANDO UMA ESTRUTURA IF/ELSE
+    if(a==b)
+    resultado = "verdadeiro";
+    else
+    resultado = "falso";
+    */
 
-        variavel = !variavel;
-        System.out.println(variavel);
+    //MESMA CONDICIONAL, MAS DESSA VEZ, UTILIZANDO O OPERADOR CONDICIONAL TERNÁRIO
+    String resultado = (a==b) ? "verdadeiro" : "false";
 
+    System.out.println(resultado);
     }   
 }
