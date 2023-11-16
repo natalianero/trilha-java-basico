@@ -3,29 +3,22 @@ package edu.natalia;
 public class Operadores {
     public static void main(String[] args){
 
-        String nomeUm = "GLEYSON";
-        String nomeDois = new String("GLEYSON");
+        boolean condicao1=true;
 
-        System.out.println(nomeUm == nomeDois); //false 
-        System.out.println(nomeUm.equals(nomeDois)); //true - compara conteúdos
-        
-        int numero1 = 1;
-        int numero2 = 2;
+        boolean condicao2=false;
 
-        boolean simNao = numero1 == numero2;
+        /* Aqui estamos utilizando o operador lógico E para fazer a união de duas 
+        expressões. 
+        É como se estivesse escrito:
+        "Se Condicao1 e Condicao2 forem verdadeiras, executar código"
+        */
 
-        if(numero1 < numero2){
-            System.out.println("a nossa condição é verdadeira");
-        }
+        if(condicao1 && condicao2)
+            System.out.print("Os dois valores precisam ser verdadeiros");;
 
-        System.out.println("numeroUm é igual a numeroDois? " + simNao);
+        //Se condicao1 OU condicao2 for verdadeira, executar código.
+        if(condicao1 || condicao2)
+            System.out.print("Um dos valores precisa ser verdadeiro");
 
-        simNao = numero1 != numero2;
-
-        System.out.println("numeroUm é diferente a numeroDois? " + simNao);
-
-        simNao = numero1 > numero2;
-
-        System.out.println("numeroUm é maior do que o numeroDois? " + simNao);
     }   
 }
