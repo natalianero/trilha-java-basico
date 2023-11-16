@@ -2,22 +2,30 @@ package edu.natalia;
 
 public class Operadores {
     public static void main(String[] args){
-       // classe Operadores.java
-    int a, b;
 
-    a = 5;
-    b = 6;
+        String nomeUm = "GLEYSON";
+        String nomeDois = new String("GLEYSON");
 
-    /* EXEMPLO DE CONDICIONAL UTILIZANDO UMA ESTRUTURA IF/ELSE
-    if(a==b)
-    resultado = "verdadeiro";
-    else
-    resultado = "falso";
-    */
+        System.out.println(nomeUm == nomeDois); //false 
+        System.out.println(nomeUm.equals(nomeDois)); //true - compara conteúdos
+        
+        int numero1 = 1;
+        int numero2 = 2;
 
-    //MESMA CONDICIONAL, MAS DESSA VEZ, UTILIZANDO O OPERADOR CONDICIONAL TERNÁRIO
-    String resultado = (a==b) ? "verdadeiro" : "false";
+        boolean simNao = numero1 == numero2;
 
-    System.out.println(resultado);
+        if(numero1 < numero2){
+            System.out.println("a nossa condição é verdadeira");
+        }
+
+        System.out.println("numeroUm é igual a numeroDois? " + simNao);
+
+        simNao = numero1 != numero2;
+
+        System.out.println("numeroUm é diferente a numeroDois? " + simNao);
+
+        simNao = numero1 > numero2;
+
+        System.out.println("numeroUm é maior do que o numeroDois? " + simNao);
     }   
 }
